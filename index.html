@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephaney Acain Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Stephaney Acain</h2>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h3>Hello It's Me</h3>
+      <h1>Stephaney Acain</h1>
+      <p>And I'm a <span class="highlight">Frontend Developer</span></p>
+      <p class="description">
+        I am a passionate frontend developer with a love for creating beautiful and functional web applications. 
+        I specialize in building responsive and user-friendly interfaces using modern technologies.
+      </p>
+      <button type="button" onclick="showMessage()">Hire Me</button>
+    </div>
+
+    <!-- Replace images/profile.png with your own photo -->
+    <img src="Images (3).png" alt="Profile" />
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-content">
+      <img src="Images (3).png" alt="Profile" class="about-image" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h3 class="highlight">Frontend Developer</h3>
+        <p>
+          I am a passionate frontend developer with a love for creating beautiful and functional web applications. 
+          I specialize in building responsive and user-friendly interfaces using modern technologies like HTML, CSS, 
+          JavaScript, and React. I am always eager to learn new things and take on challenging projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">SKILLS</h2>
+    <div class="skills-container">
+      <div class="skills-column">
+        <h3>Programming Languages</h3>
+        <div class="skill-card">
+          <div class="skill-icon">JS</div>
+          <div class="skill-info">
+            <h4>JavaScript</h4>
+            <span class="years">2 Years</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">PY</div>
+          <div class="skill-info">
+            <h4>Python</h4>
+            <span class="years">1 Year</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">TS</div>
+          <div class="skill-info">
+            <h4>TypeScript</h4>
+            <span class="years">1 Year</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-column">
+        <h3>Web Technology</h3>
+        <div class="skill-card">
+          <div class="skill-icon">HT</div>
+          <div class="skill-info">
+            <h4>HTML5</h4>
+            <span class="years">2 Years</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">CS</div>
+          <div class="skill-info">
+            <h4>CSS3</h4>
+            <span class="years">2 Years</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">RE</div>
+          <div class="skill-info">
+            <h4>React</h4>
+            <span class="years">1 Year</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-column">
+        <h3>Development Tools</h3>
+        <div class="skill-card">
+          <div class="skill-icon">GI</div>
+          <div class="skill-info">
+            <h4>Git</h4>
+            <span class="years">2 Years</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">VS</div>
+          <div class="skill-info">
+            <h4>VS Code</h4>
+            <span class="years">2 Years</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">NP</div>
+          <div class="skill-info">
+            <h4>NPM</h4>
+            <span class="years">1 Year</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">PROJECTS</h2>
+    <div class="projects-container">
+      <div class="project-item">
+        <img src="Visual-Studio-Code-featured-2.avif" alt="Project 1" />
+        <div class="project-info">
+          <h3>Code Editor App</h3>
+          <p>A modern code editor with syntax highlighting</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="admin-panel-neumorphic-dashboard-ui-kit-vector.jpg" alt="Project 2" />
+        <div class="project-info">
+          <h3>Dashboard UI</h3>
+          <p>Analytics dashboard with data visualization</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="82057906_10206979702728071_5025372535324147712_n-1000x675.jpg" alt="Project 3" />
+        <div class="project-info">
+          <h3>Multi-Monitor Setup</h3>
+          <p>Productivity tools for developers</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="soft_dev_enviro_setup.jpg" alt="Project 4" />
+        <div class="project-info">
+          <h3>Development Environment</h3>
+          <p>Complete development workspace solution</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">CONTACT ME!</h2>
+    <form class="contact-form" onsubmit="return handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" name="firstname" placeholder="First Name" required />
+        <input type="text" name="lastname" placeholder="Last Name" required />
+      </div>
+      <div class="form-row">
+        <input type="tel" name="mobile" placeholder="Mob. Number" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
